@@ -1,14 +1,14 @@
 # 04UIView
 
 
--(void)createView{<br/>
+-  (void)createView{<br/>
     //UIView 是所有显示在屏幕上 view对象的基础类<br/>
     //所有显示在屏幕上的view 都继承自UIView<br/>
     //UIView 是一个矩形  可以设置背景颜色  有层级关系<br/>
     UIView* view=[[UIView alloc]init];<br/>
     //设置宽高一级位置<br/>
     view.frame=CGRectMake(100, 100, 100, 200);<br/>
-    
+   
     [view setBackgroundColor:[UIColor blueColor]];<br/>
     //将新建的视图 添加到 父识图上面<br/>
     [self.view addSubview:view];<br/>
@@ -29,7 +29,7 @@
 }
 
 
-- (void)viewDidLoad {<br/>
+-   (void)viewDidLoad {<br/>
     [super viewDidLoad];<br/>
     [self createView];<br/>
     // Do any additional setup after loading the view, typically from a nib.
